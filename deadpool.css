@@ -1,0 +1,220 @@
+@font-face {
+  font-family: 'spoidyfont';
+src: url('./spoidyfont.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'spoidyfont2';
+src: url('./Spider-Man.otf') format('opentype');
+}
+
+
+header{
+  margin: auto;  
+  display: flex;
+    border: 0px solid red;
+    justify-content: space-around;
+    margin-top: 2%;
+    width: 60%;
+ }
+ nav:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  nav {
+    border: 0 solid black;
+    display: inline-block;
+    opacity: 0.56;
+    position: relative;
+  }
+ 
+  nav::after {
+    content: "";
+    position: absolute;
+    bottom: -15px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
+  }
+  
+  nav:hover::after {
+    opacity: 1; /* Make the red dot visible on hover */
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+  body {
+    overflow: visible;
+    font-family: sans-serif;
+    color: aliceblue;
+    background-color: #0b1215;
+
+    background-image: url("./spoidy.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 100vh; /* Make sure the body takes the full height of the viewport */
+    margin: 0;
+  background-attachment: fixed;
+  }
+
+
+    .search{
+      width: 24px;
+      height: 24px;
+      margin-left: 50px;
+      
+    }
+.search :hover{
+opacity: 1;
+  cursor: pointer;
+  filter: brightness(300%);
+}
+.logo{
+  width: 57px;
+height: 50px;
+border-radius: 50%;
+  margin-left: -20%; /* Adjust the margin to move the logo more to the left */
+  margin-top: -16px;
+  position: absolute;
+  filter: invert(100%);
+}
+
+.logo:hover{
+  cursor: pointer;
+  filter: invert(100%) brightness(150%);
+
+}
+main{
+  display: grid;
+  grid-template-columns: repeat(2,minmax(150px,2fr));
+  gap: 220px;
+  padding: 5px;
+  margin: 19%;
+position: fixed;
+margin-left: 23%;
+z-index: -1;
+
+}
+#spider{
+  font-family: 'spoidyfont',sans-serif;
+  color: red;
+  font-size: 98px;
+  /* display: flex; */
+ /* justify-content: center; */
+ margin-left: -10px;
+ text-shadow: 0 0 15px red;
+ /* transition: text-shadow 0.3s ease-in-out; */
+}
+#man{
+  font-family: 'spoidyfont',sans-serif;
+  color: red;
+  font-size: 98px;
+  /* display: flex; */
+  margin-left: 85px;
+  /* justify-content: center; */
+  text-shadow: 0 0 12px red;
+  /* transition: text-shadow 0.3s ease-in-out; */
+} 
+/* #info{
+  background-color: black;
+  border: 1px solid black;
+  width: 1490px;
+  margin-left: 11px;
+  border-radius: 6px;
+  height: 65px; */
+/* } */
+center{
+  font-family: 'spoidyfont2',sans-serif;
+  font-size: xx-large;
+  font-weight:  bolder;
+  color: antiquewhite;
+  text-shadow: 2px 2px 1px red;
+  font-size: 50px;
+  padding: 2rev;
+  letter-spacing: 8px;
+  text-decoration: overline underline;
+  margin-top:10px ;
+  
+
+}
+body::-webkit-scrollbar {
+  width: 12px; 
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #413838; 
+  border-radius: 60px; 
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #111; 
+}
+#home{
+  background-color: rgba(0,0,0,0.9);
+  width: 1460px;
+  border-radius: 20px;
+  height: 1000px;
+  margin-top: 44%;
+  margin-left: 25px;
+  border: 1px solid bisque;
+  position: relative;
+  
+  /* background: linear-gradient(160deg,black,black, red); */
+}
+.allspiderman{
+  border: 0px solid #413838;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: repeat(2,minmax(150px,2fr));
+  gap: 20px;
+  padding: 2px;
+  position: relative;
+  height: 5vh;
+  width: 93%;
+  margin-left:3.5% ;
+  margin-top: 1%;
+  
+  
+  
+}
+.b{
+  border: 1px solid rgba(229, 17, 17, 0.3);
+  border-radius: 30px;
+  background-color: black;
+  
+  box-shadow: 5px 5px 10px rgba(229, 17, 17, 0.688);
+}
+
+
+#peter{
+  
+  height: 60%;
+  width: 35%;
+  margin-left:2% ;
+  margin-top:2% ;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px;
+ 
+}
+#peter2{
+  margin-left:2% ;
+  margin-top:2% ;
+  object-fit: cover;
+  height: 60%;
+  width: 35%; 
+  border-radius: 10px;
+  border: 1px solid red;
+}
+.gwen{
+  
+  box-shadow: 5px 5px 10px rgba(248, 57, 160,0.8);
+  background-color: black;
+  border: 1px solid rgba(248, 57, 160, 0.2);
+}
